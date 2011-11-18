@@ -55,7 +55,7 @@ function detect_featured_image(data) {
         return score(a) - score(b);
     });
 
-    console.log(sorted.pop());
+    console.log(sorted.pop().uri);
 }
 
 function score(feature) {
