@@ -1,0 +1,10 @@
+MOTIVATION:
+* When you post a link on facebook normaly with your browser, facebook automatically detects a featured image of the link (web page).
+  However, if you post a link through facebook API, it doesn't.
+  So, I needed to develop a similar detection tool which takes url as an argument and returns a featured image of the page.
+  This library contains tiny algorithm to do that.
+
+TODO:
+* make into npm package format.
+* rewrite this README.
+* deploy web API and command line API.
