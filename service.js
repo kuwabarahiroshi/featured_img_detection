@@ -23,7 +23,7 @@ http.get({
         parse(buffer);
     })
 }).on('error', function(e) {
-    console.err('Error on HTTP GET: ' + e.message);
+    console.error('Error on HTTP GET: ' + e.message);
 });
 
 
@@ -37,7 +37,7 @@ function parse(html) {
         var uri = url.resolve(page_url, $(img).attr('src'));
         im.identify(uri, function(err, features) {
             if (err) {
-                console.err(err);
+                console.error(err);
             } else {
                 features.uri = uri;
                 features.index = index;
